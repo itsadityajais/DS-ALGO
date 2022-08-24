@@ -16,20 +16,8 @@ var countAndSay = function(n) {
         }
         str = newstr
     }
-    console.log(str)
     return str
-   
 };
-
-let result= countAndSay(i)
-console.log(result)
-
-
-
-
-
-
-
 
 
 
