@@ -10,5 +10,8 @@ function bubblesort(arr){
     } 
     console.log(arr);
 }
-let arr = [5,9,6,2,7,4,8,6,2]
+let arr=[2,1,3,5,4,0,6,8,9,7];
 bubblesort(arr);
+let k=2;
+console.log(`${k}max=`+ arr[arr.length-k]);
+console.log(`${k}min=`+arr[k-1]);
