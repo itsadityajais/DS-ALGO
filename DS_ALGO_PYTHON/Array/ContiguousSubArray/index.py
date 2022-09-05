@@ -12,6 +12,8 @@
 #             maxSum=currSum
 # print(maxSum)
 
+
+# ___________________  Article : https://medium.com/@rsinghal757/kadanes-algorithm-dynamic-programming-how-and-why-does-it-work-3fd8849ed73d  __________________________________
 ar = [-2,3,-1,2]
 n = len(ar)
 maxSum = -1e8
