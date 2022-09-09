@@ -13,6 +13,3 @@ function rotate(arr,n){
 console.log("Rotated array is :");
  for(let i=0;i<n;i++)
  console.log(arr[i]+ " ");
-
-
-
