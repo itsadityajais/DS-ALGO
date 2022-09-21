@@ -1,41 +1,26 @@
-var countAndSay = function(n) {
-    let str = "";
-    for(let i=1; i<=n; i++){
-        helper(i)
+var countAndSay = function (n) {
+  let str = "";
+  for (let i = 1; i <= n; i++) {
+    helper(i);
+  }
+  function helper(i) {
+    if (i == 1) {
+      str = "1";
+      return;
     }
-    function helper(i){
-        if(i==1){str = "1";return;}
-        let newstr = ""
-        for(let j=0; j<str.length; j++){
-            let count = 1;
-            while(j+1 < str.length && str[j]==str[j+1]){
-                    count++;
-                    j++;
-            }
-            newstr += count + str[j]
-        }
-        str = newstr
+    let newstr = "";
+    for (let j = 0; j < str.length; j++) {
+      let count = 1;
+      while (j + 1 < str.length && str[j] == str[j + 1]) {
+        count++;
+        j++;
+      }
+      newstr += count + str[j];
     }
-    return str
+    str = newstr;
+  }
+  return str;
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // function equal(a,b){
 //     for(let i=0;i<=a.length;i++){
@@ -44,9 +29,9 @@ var countAndSay = function(n) {
 //         }
 //         else{
 //         return false;
-//     } 
+//     }
 // }
-    
+
 // }
 // let result=equal(a=[1,2,3,0],b=0);
 // console.log(result);
